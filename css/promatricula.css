@@ -1,0 +1,23 @@
+.download-card {
+    background-color: #112a57;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.download-card:hover {
+    transform: scale(1.03);
+    background-color: #0d224b;
+}
+
+.download-icon {
+    font-size: 20px;
+}
+
+.download-text {
+    font-weight: 500;
+}

@@ -1,0 +1,18 @@
+.lista-metodologia {
+  padding-left: 1rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+
+.linea-metodologica h3 {
+  margin-bottom: 1rem;
+}
+
+.sombra-img {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  object-fit: cover;
+}

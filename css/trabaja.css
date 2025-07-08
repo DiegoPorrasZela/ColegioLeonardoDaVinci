@@ -1,0 +1,10 @@
+.bg-cuadro {
+      background-color: #17366f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 220px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }

@@ -1,0 +1,565 @@
+html, body {
+    overflow-x: hidden; /* Esto elimina el desplazamiento horizontal */
+}
+
+body {
+    padding-top: 110px; /* Ajusta este número al alto de tu navbar */
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* para que esté por encima del contenido */
+}
+
+/* NAVBAR BLANCA ESTILO SAN FELIPE */
+.bg-propio {
+    background-color: #ffffff !important; /* fondo blanco */
+    
+    
+}
+
+/* Estilo para el texto del brand */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003366 !important; /* azul institucional */
+    text-align: left;
+    margin-right: 1rem;
+}
+
+/* Imagen del logo */
+.navbar-brand img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Estructura del navbar */
+.navbar .container {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Alineación del menú (a la derecha) */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Estilo de los enlaces del menú */
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 0.5rem;
+}
+
+.navbar .nav-link {
+    color: #000000 !important; /* texto negro */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #003366 !important; /* azul al pasar el mouse */
+}
+
+/* Botón responsive (hamburguesa) */
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    border-top: 3px solid #003366; /* borde azul arriba */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra suave */
+    padding: 0.5rem 0;
+    min-width: 200px;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #003366;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 0.5rem 1.25rem;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: left;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f2f2f2;
+    color: #003366; /* azul institucional */
+}
+
+/* Alinear dropdown debajo del texto */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* sin espacio arriba */
+}
+
+/* Flecha al lado del texto en dropdown-toggle */
+.dropdown-toggle .dropdown-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+/* Rotar flecha cuando el dropdown está activo */
+.show > .dropdown-toggle .dropdown-arrow {
+    transform: rotate(-135deg);
+}
+
+/* Abre el dropdown al hacer hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* evita espacio entre el botón y el menú */
+}
+
+
+
+/* Tipografías decorativas para títulos o slogans (opcional) */
+.fancy-greatvibes {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #fff8dc;
+    text-shadow: 1px 1px 2px #c0392b;
+    font-weight: bold;
+}
+
+.fancy-parisienne {
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    color: #fff5e1;
+    text-shadow: 1px 1px 3px #d35400;
+    font-weight: bold;
+}
+
+.fancy-sacramento {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.2rem;
+    color: #ffe6f0;
+    text-shadow: 1px 1px 3px #c2185b;
+    font-weight: bold;
+}
+
+.fancy-alexbrush {
+    font-family: 'Alex Brush', cursive;
+    font-size: 5rem;
+    color: #A67B5B;
+    font-weight: bold;
+}
+
+/* Imagen promocional banner */
+.promo-banner img {
+    max-height: 800px; /* puedes ajustar la altura */
+    object-fit: cover; /* recorta sin deformar */
+    width: 10%;
+    display: block;
+}
+
+.why-section {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+.why-section h2 {
+  font-size: 2.8rem;
+  color: #a0eb4b;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.why-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #a0eb4b;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.flip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.flip-card {
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  margin: 1rem;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Parte frontal */
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-label {
+  position: absolute;
+  bottom: 0;
+  background-color: #003366;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+/* Parte trasera */
+.flip-back {
+  background-color: #003366;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Sección con fondo personalizado */
+.porque-elegir {
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* efecto parallax opcional */
+    color: white;
+    padding: 5rem 1rem;
+}
+
+/* Tarjetas de beneficios */
+.tarjeta-beneficio {
+    background: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta-beneficio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Íconos centrados */
+.icono-beneficio {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.servicios-section h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #1a1a1a;
+}
+
+.servicio h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.servicio p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.btn-success {
+  background-color: #98ec11 !important;
+  border: none !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff !important; /* texto blanco */
+}
+
+.agenda-cita {
+  background-color: #173d78; /* azul fondo */
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.container-cita {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.info-cita {
+  flex: 1 1 60%;
+}
+
+.info-cita h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pasos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.paso {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.paso img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.paso h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.formulario-cita {
+  flex: 1 1 300px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  color: #000;
+}
+
+.formulario-cita form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-cita input[type="text"],
+.formulario-cita input[type="tel"],
+.formulario-cita input[type="email"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+.checkbox-label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formulario-cita button {
+  background-color: #009fe3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-cita button:hover {
+  background-color: #007bb8;
+}
+
+@media (max-width: 768px) {
+  .container-cita {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-cita {
+    text-align: center;
+  }
+
+  .formulario-cita {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .servicios-section {
+    padding: 2rem 1rem;
+  }
+}
+
+.logo-uni {
+  max-height: 60px;
+}
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.social-icons a {
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #003366 !important;
+}
+
+footer ul li {
+  margin-bottom: 4px;
+}
+
+footer ul li ul li {
+  font-size: 0.9rem;
+}
+
+footer .btn i {
+  color: white;
+}
+
+
+
+
+/* --- ESTILOS PERSONALIZADOS PARA MENÚ EN MÓVIL --- */
+@media (max-width: 768px) {
+  /* 1. Eliminar estilo de tarjeta para dropdowns (sin fondo ni bordes) */
+  .dropdown-menu {
+    display: block !important;
+    position: relative !important;
+    float: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 0;
+  }
+
+  .dropdown-item {
+    padding-left: 2rem;
+    background-color: transparent !important;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* 2. Resaltar títulos principales (dropdown-toggle) con fondo azul opaco */
+  .nav-item.dropdown > .nav-link {
+    background-color: rgba(0, 51, 102, 0.1); /* azul opaco */
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+  }
+
+  /* Opcional: mejorar separación entre secciones */
+  .nav-item:not(.dropdown) .nav-link {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Oculta flechitas si no quieres mostrarlas en móvil */
+  .dropdown-toggle .dropdown-arrow {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .dropdown-menu {
+    border-top: none;
+    box-shadow: none;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .flip-card {
+    width: 90%;
+    height: 280px;
+  }
+  .flip-back {
+    font-size: 0.95rem;
+  }
+}
+

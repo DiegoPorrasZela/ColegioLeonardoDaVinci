@@ -1,0 +1,21 @@
+.objetivos-ciencias {
+  background-color: #f8f9fa;
+}
+
+.descripcion-objetivo {
+  max-width: 800px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.caja-detalle {
+  background-color: #ffffff;
+  border-left: 4px solid #173d78;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.caja-detalle:hover {
+  transform: translateY(-5px);
+}

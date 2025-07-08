@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/proadmision.css">
+  <link rel="stylesheet" href="css/inicial.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/insignia.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Incio-Colegio Leonardo Da Vinci</title>
+</head>
+
+<body>
+    <header class="fixed-header">
+    <nav class="navbar navbar-expand-sm bg-propio fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="rounded-circle" src="img/insignia.png" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre Nosotros</a></li>
+
+            <!-- NIVELES con dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-arrow" href="#" id="nivelesDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Niveles<span class="dropdown-arrow"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="nivelesDropdown">
+                <li><a class="dropdown-item" href="inicial.html">Inicial</a></li>
+                <li><a class="dropdown-item" href="primaria.html">Primaria</a></li>
+              </ul>
+            </li>
+
+            <!-- ADMISION con dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-arrow" href="#" id="admisionDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Admisión<span class="dropdown-arrow"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="admisionDropdown">
+                <li><a class="dropdown-item" href="proadmision.html">Proceso de Admisión</a></li>
+                <li><a class="dropdown-item" href="promatricula.html">Proceso de Matricula</a></li>
+                <li><a class="dropdown-item" href="utiles.html">Lista de Utiles</a></li>
+              </ul>
+            </li>
+
+            <!-- AREA con dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-arrow" href="#" id="areaDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Área<span class="dropdown-arrow"></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="areaDropdown">
+                <li><a class="dropdown-item" href="matematica.html">Matemática</a></li>
+                <li><a class="dropdown-item" href="comunicacion.html">Comunicación</a></li>
+                <li><a class="dropdown-item" href="ingles.html">Ingles</a></li>
+                <li><a class="dropdown-item" href="ciencias.html">Ciencias</a></li>
+                <li><a class="dropdown-item" href="arte.html">Arte</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="trabaja.html">Trabaja con Nosotros</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<section class="encabezado-nivel">
+        <div class="container-fluid">
+            <div class="row align-items-center g-0">
+                <div class="col-md-6 texto-nivel">
+                    <h1 class="fw-bold text-white">Admisión</h1>
+                </div>
+                <div class="col-md-6 imagen-nivel">
+                    <img src="img/primaria.jpg" alt="Niños jugando" class="img-fluid w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="proceso-inscripcion py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Paso 1: Completar el Formulario de Inscripción</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <p class="mb-3">
+          Contacte al área de admisiones para solicitar su inscripción como socio ante el Consejo de Administración.
+        </p>
+        <div class="alert alert-warning" role="alert">
+          <strong>Importante:</strong> La cuota de incorporación, según el estatuto, pasa inmediatamente a formar parte del capital social de la Cooperativa y <u>no es reembolsable</u> en caso de pérdida de la calidad de socio o retiro del alumno(a).
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container py-5">
+  <h2 class="mb-4 text-center fw-bold">
+    Paso 2: Presentar de Manera Física los Siguientes Documentos:
+  </h2>
+
+  <div class="accordion" id="accordionDocumentos">
+    
+    <!-- Alumnos Nuevos -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingNuevos">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNuevos" aria-expanded="false" aria-controls="collapseNuevos">
+          Alumnos Nuevos
+        </button>
+      </h2>
+      <div id="collapseNuevos" class="accordion-collapse collapse" aria-labelledby="headingNuevos" data-bs-parent="#accordionDocumentos">
+        <div class="accordion-body">
+          <ul>
+            <li>Pago por la Ficha de Inscripción / Postulante.</li>
+            <li>Partida de Nacimiento original y copia legalizada.</li>
+            <li>Tarjeta de Vacunación original y copia (3 años hasta 2º. grado).</li>
+            <li>Escanear el DNI del alumno y de los padres.</li>
+            <li>Certificado de Estudios.</li>
+            <li>Libreta de Notas. Informe Psicológico.</li>
+            <li>2 Fotos del estudiante tamaño carnet a color.</li>
+            <li>Constancia de Matrícula del SIAGIE.</li>
+            <li>Copia de las 3 últimas boletas de pago (documentación que acredite los ingresos mensuales familiares).</li>
+            <li>Reporte de Senitel o infocorp de padres de familia o apoderados / tutores.</li>
+            <li>Constancia de no adeudo de la institución educativa de procedencia.</li>
+            <li>Certificado de conducta del colegio de procedencia.</li>
+            <li>Declaración jurada firmada y legalizada de la tenencia del menor (en el caso de padres separados o – divorciados), escaneada o en foto.</li>
+            <li>En caso el Apoderado no sea el Padre/ Madre biológico del estudiante, deberá presentar un documento de autorización legalizado.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Traslados -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTraslados">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTraslados" aria-expanded="false" aria-controls="collapseTraslados">
+          Traslados
+        </button>
+      </h2>
+      <div id="collapseTraslados" class="accordion-collapse collapse" aria-labelledby="headingTraslados" data-bs-parent="#accordionDocumentos">
+        <div class="accordion-body">
+          <ul>
+            <li>La Ficha única de matrícula que contenga el código del educando.</li>
+            <li>Código Modular del Colegio de procedencia, así como la Resolución Directoral de Traslado y Certificado de Estudios.</li>
+            <li>A partir del 2do grado, la Ficha Única de Matrícula con los Códigos y los Certificados de Estudio y Conducta, así como la Resolución Directoral de Traslado</li>
+            <li>Copia del DNI del Alumno.</li>
+            <li>Declaraciones Juradas de Socio y Padre de Familia debidamente suscritas.</li>
+            <li>En caso la asistencia sea presencial: Copia del Carné de Seguro con el que el menor cuenta y listado de Clínicas para atención asistencial o en su caso referir si cuenta con atención en Essalud y/o EPS o la afiliación opcional al seguro contra accidentes que ofreceremos de acuerdo a la normativa que indique el estado.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section class="proceso-inscripcion py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Paso 3: Entrevista con los Padres de Familia</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <p class="mb-3">
+          Se realizará con ambos padres de familia vía Zoom previa coordinación con el área de admisiones.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proceso-inscripcion py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Paso 4: Entrega de la documentación</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <p class="mb-3">
+          Posterior a la entrega de documentación, se reserva la vacante.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="agenda-cita">
+    <div class="container-cita">
+      <!-- Columna izquierda: Iconos -->
+      <div class="info-cita">
+        <h2>Agenda una cita online</h2>
+        <div class="pasos">
+          <div class="paso">
+            <img src="img/insignia4.png" alt="Reunión con admisión" />
+            <h4>Reunión con admisión</h4>
+            <p>Completa el formulario para agendar una cita y contestar a todas tus preguntas.</p>
+          </div>
+          <div class="paso">
+            <img src="img/insignia5.png" alt="Entrega de documentos" />
+            <h4>Entrega de documentos</h4>
+            <p>Recibirás una lista de documentos que deberás presentar en el proceso de admisión.</p>
+          </div>
+          <div class="paso">
+            <img src="img/insignia6.png" alt="Reserva de vacante" />
+            <h4>Reserva de vacante</h4>
+            <p>Se confirma la vacante para el grado y año al que postula el alumno.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: Formulario -->
+      <div class="formulario-cita">
+        <form>
+          <label>Nombres y Apellidos *</label>
+          <input type="text" required />
+
+          <label>Teléfono *</label>
+          <input type="tel" required />
+
+          <label>Dirección de correo electrónico *</label>
+          <input type="email" required />
+
+          <label class="checkbox-label">
+            <input type="checkbox" required />
+            Acepto las políticas de privacidad *
+          </label>
+
+          <button type="submit" id="btnEnviar">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer style="background-color: #003366; color: white;" class="pt-5 pb-4">
+    <div class="container text-md-start text-center">
+      <div class="row">
+
+        <!-- Columna 1: Logo y descripción -->
+        <div class="col-md-4 mb-4">
+          <img src="img/insignia.png" alt="Colegio San Felipe" style="max-width: 120px;" class="mb-3">
+          <p class="small">
+            Ofrecemos un modelo de enseñanza humanista que prioriza la formación integral de la persona,
+            y el desarrollo de su capacidad crítica y de libre expresión, en un clima de calidez y confianza.
+          </p>
+        </div>
+
+        <!-- Columna 2: Enlaces -->
+        <div class="col-md-5 mb-4">
+          <h5 class="fw-bold">Enlaces de Interés</h5>
+          <ul class="list-unstyled small">
+            <li>▪ Sobre Nosotros</li>
+            <li>▪ Niveles
+              <ul class="list-unstyled ms-3">
+                <li href="nosotros.html">• Nivel Inicial</li>
+                <li>• Nivel Primaria</li>
+                <li>• Nivel Secundaria</li>
+              </ul>
+            </li>
+            <li>▪ Admisión
+              <ul class="list-unstyled ms-3">
+                <li>• Proceso de Admisión</li>
+                <li>• Proceso de Matrícula</li>
+                <li>• Lista de Útiles</li>
+              </ul>
+            </li>
+            <li>▪ Área
+              <ul class="list-unstyled ms-3">
+                <li>• Matemática</li>
+                <li>• Comunicación</li>
+                <li>• Inglés</li>
+                <li>• Ciencias</li>
+                <li>• Arte</li>
+              </ul>
+            </li>
+            <li>▪ Servicios</li>
+            <li>▪ Galería</li>
+            <li>▪ Trabaja con nosotros</li>
+            <li>▪ Cooperativa</li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Contáctenos</h5>
+          <p class="small mb-1"><i class="fas fa-phone me-2"></i> (+51) 964359449</p>
+          <p class="small mb-1"><i class="fas fa-envelope me-2"></i> admision@ldv.edu.pe</p>
+          <p class="small mb-3"><i class="fas fa-map-marker-alt me-2"></i> Jr.Centaruo MZNDLOTE8.<br>Lima
+
+          <!-- Redes sociales -->
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-sm btn-danger" style="background-color: #e1306c;"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#" class="btn btn-sm btn-dark" style="background-color: #bb0000;"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+<!-- Modal de confirmación -->
+  <div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmacionModalLabel">Mensaje Enviado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Gracias por contactarnos. Pronto nos pondremos en contacto contigo.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.querySelector(".formulario-cita form").addEventListener("submit", function (e) {
+      e.preventDefault(); // Previene el envío real
+      const modal = new bootstrap.Modal(document.getElementById("confirmacionModal"));
+      modal.show(); // Muestra el modal
+      this.reset(); // Limpia el formulario (opcional)
+    });
+  </script>
+</body>

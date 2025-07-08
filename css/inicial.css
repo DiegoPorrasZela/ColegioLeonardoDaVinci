@@ -1,0 +1,69 @@
+
+body {
+  padding-top: 130px; /* Aumenta si tu navbar es más alta */
+}
+
+.encabezado-nivel {
+  background-image: url('../img/fondo.png'); /* fondo azul con diseño */
+  background-size: cover;
+  background-position: center;
+  padding: 0px ;
+  position: relative;
+}
+
+.texto-nivel {
+  padding: 40px;
+}
+
+.texto-nivel h1 {
+  font-size: 3rem;
+}
+
+.imagen-nivel img {
+  height: 0%;
+  object-fit: cover;
+  display: block;
+}
+
+/*Seccion de fundamentacion*/
+.metodologia-section {
+  background-color: #f9f9f9;
+}
+
+.metodologia-section p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.metodologia-section h2 {
+  color: #003366;
+}
+
+.psicomotricidad-section {
+  background-color: #fdf9f5; /* Color muy claro, similar al de la imagen */
+}
+
+.psicomotricidad-section h4 {
+  color: #003366;
+}
+
+.psicomotricidad-section ul {
+  padding-left: 1.2rem;
+}
+
+.psicomotricidad-section li {
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+.areas-section {
+  background-color: #fdfdfd;
+}
+
+.areas-section h5 {
+  color: #003366;
+  font-size: 1.1rem;
+}
+
+

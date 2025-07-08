@@ -1,0 +1,8 @@
+.text-justify {
+    text-align: justify;
+}
+
+.laboratorio-section {
+  background: none;
+  color: #000; /* Asegura texto oscuro si usas text-white antes */
+}

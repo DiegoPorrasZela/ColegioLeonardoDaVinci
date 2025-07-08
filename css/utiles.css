@@ -1,0 +1,28 @@
+.download-icon {
+    color: #0d2a5b;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+.download-icon:hover {
+    transform: scale(1.2);
+}
+
+.util-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.util-row {
+    border: 1px solid #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.util-row:not(:last-child) {
+    border-bottom: none;
+}

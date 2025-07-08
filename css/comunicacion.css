@@ -1,0 +1,39 @@
+.propuesta-educativa .contenido-con-imagen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.propuesta-educativa .caja-sombra {
+  flex: 1;
+}
+
+.propuesta-educativa .imagen-derecha {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.imagen-derecha {
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .propuesta-educativa .contenido-con-imagen {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .propuesta-educativa .caja-sombra {
+    text-align: left;
+  }
+}

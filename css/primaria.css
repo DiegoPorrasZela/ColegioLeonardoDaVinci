@@ -1,0 +1,70 @@
+.propuesta-educativa {
+  background-color: #fff;
+}
+
+.linea-decorativa {
+  width: 80%;
+  height: 3px;
+  background: repeating-linear-gradient(
+    to right,
+    #ccc,
+    #ccc 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  margin: 0 auto;
+}
+
+.caja-sombra {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.caja-sombra ul {
+  padding-left: 1.5rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.como-aprenden {
+  background-color: #fdf9f5;
+  color: #000;
+}
+
+.como-aprenden h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.como-aprenden strong {
+  font-size: 1.1rem;
+}
+
+.como-aprenden img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.caracteristicas h3 {
+  color: #050607;
+}
+
+.caracteristicas ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.caracteristicas ul li::before {
+  
+  position: absolute;
+  left: 0;
+  color: #003366;
+}
